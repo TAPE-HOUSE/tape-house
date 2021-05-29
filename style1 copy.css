@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Niveau Grotesk Bold';
+    src: url('../Niveau\ Grotesk\ Bold.otf');
+}
+
+* {
+    font-family: 'Niveau Grotesk Bold', Geneva, Tahoma, sans-serif;
+    /* font-family: meloriac;
+    font-weight: 100; */
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body
+{
+    background-color: black;
+    /* padding: 10% 0 0 0; */
+    margin-top: 8%;
+}
+
+.live
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10.5vh; */
+    position: sticky;
+    top: 2.7%;
+    margin-bottom: 5%;
+}
+
+.lives
+{
+    display: flex;
+    justify-content: space-around;
+    width: 110px;
+    height: 20px;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.live1div
+{
+    width: 60px;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+}
+
+.live2div
+{
+    width: 60px;
+    background-color: black;
+    border-radius: 0 50px 50px 0;
+}
+
+.live1
+{
+    color: black;
+}
+
+.live2
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.all {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 95%;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    /* border-radius: 5px; */
+    /* border: 1px solid rgb(228, 223, 223); */
+    display: flex;
+}
+
+#table {
+    width: 100%;
+}
+
+.item-content {
+    display: flex;
+    padding: 7px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    /* border-bottom: 1px solid rgb(228, 223, 223); */
+}
+
+.text-content {
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+
+.item-content-end {
+    flex-direction: row-reverse;
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.gray {
+    color: rgb(172, 169, 169);
+}
+
+.author {
+    font-size: 16px;
+}
+
+.date {
+    font-size: 18px;
+    /* margin-top: 20px; */
+    height: 25px;
+    color: var(--date-color) !important;
+}
+
+.text-date {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.black {
+    margin-bottom: 0px;
+}
+
+.img {
+    width: 100px !important;
+    align-self: center;
+}
+
+.ico {
+    width: 18px;
+    float: left;
+}
+
+#movies {
+    width: 100%;
+}
+
+#movies>div:nth-child(10) {
+    border-bottom: none;
+}
+
+.title {
+    font-size: 13px;
+}
+
+.title,
+.author {
+    color: var(--title-artist-color);
+    margin: 5px 0;
+}
+
+:root {
+    --date-color: #EB4526;
+    --title-artist-color: white;
+}
